@@ -1,0 +1,10 @@
+{
+  "entryPoints": [
+    "./src/mechanics/interface/",
+    "./src/mechanics/calc/",
+    "./src/mechanics/Pokemon.ts",
+    "./src/store/reducers/",
+    "./src/components/pages/"
+  ],
+  "out": "../doc/design/MIS/"
+}

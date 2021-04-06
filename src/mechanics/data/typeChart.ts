@@ -1,0 +1,168 @@
+/**
+ * Type chart data set.
+ * Consists type strengths and weaknesses.
+ * @file TypeChart.ts
+ * @author Dimitri Tsampiras
+ * @since 1.0.0
+ */
+
+import { TypeEffectiveness } from '../interface/types';
+
+export const TYPECHART: {
+  [type: string]: { [type: string]: TypeEffectiveness };
+} = {
+  normal: {
+    fighting: 0.5,
+  },
+  fighting: {
+    normal: 2,
+    rock: 2,
+    steel: 2,
+    ice: 2,
+    dark: 2,
+    flying: 0.5,
+    poison: 0.5,
+    psychic: 0.5,
+    bug: 0.5,
+    ghost: 0.5,
+    fairy: 0.5,
+  },
+  flying: {
+    fighting: 2,
+    bug: 2,
+    grass: 2,
+    rock: 0.5,
+    steel: 0.5,
+    electric: 0.5,
+  },
+  poison: {
+    grass: 2,
+    fairy: 2,
+    poison: 0.5,
+    ground: 0.5,
+    rock: 0.5,
+    ghost: 0.5,
+    steel: 0.5,
+  },
+  ground: {
+    poison: 2,
+    rock: 2,
+    steel: 2,
+    fire: 2,
+    electric: 2,
+    flying: 0.5,
+    bug: 0.5,
+    grass: 0.5,
+  },
+  rock: {
+    flying: 2,
+    bug: 2,
+    fire: 2,
+    ice: 2,
+    fighting: 0.5,
+    ground: 0.5,
+    steel: 0.5,
+  },
+  bug: {
+    grass: 2,
+    psychic: 2,
+    dark: 2,
+    fighting: 0.5,
+    flying: 0.5,
+    poison: 0.5,
+    ghost: 0.5,
+    steel: 0.5,
+    fire: 0.5,
+    fairy: 0.5,
+  },
+  ghost: {
+    ghost: 2,
+    psychic: 2,
+    normal: 0.5,
+    dark: 0.5,
+  },
+  steel: {
+    rock: 2,
+    ice: 2,
+    fairy: 2,
+    steel: 0.5,
+    fire: 0.5,
+    water: 0.5,
+    electric: 0.5,
+  },
+  fire: {
+    bug: 2,
+    steel: 2,
+    grass: 2,
+    ice: 2,
+    rock: 0.5,
+    fire: 0.5,
+    water: 0.5,
+    dragon: 0.5,
+  },
+  water: {
+    ground: 2,
+    rock: 2,
+    fire: 2,
+    water: 0.5,
+    grass: 0.5,
+    dragon: 0.5,
+  },
+  grass: {
+    ground: 2,
+    rock: 2,
+    water: 2,
+    flying: 0.5,
+    poison: 0.5,
+    bug: 0.5,
+    steel: 0.5,
+    fire: 0.5,
+    grass: 0.5,
+    dragon: 0.5,
+  },
+  electric: {
+    flying: 2,
+    water: 2,
+    ground: 0.5,
+    grass: 0.5,
+    electric: 0.5,
+    dragon: 0.5,
+  },
+  psychic: {
+    fighting: 2,
+    poison: 2,
+    steel: 0.5,
+    psychic: 0.5,
+    dark: 0.5,
+  },
+  ice: {
+    dragon: 2,
+    flying: 2,
+    grass: 2,
+    ground: 2,
+    fighting: 0.5,
+    fire: 0.5,
+    rock: 0.5,
+    steel: 0.5,
+  },
+  dragon: {
+    dragon: 2,
+    steel: 0.5,
+    fairy: 0.5,
+  },
+  fairy: {
+    fighting: 2,
+    dragon: 2,
+    dark: 2,
+    poison: 0.5,
+    steel: 0.5,
+    fire: 0.5,
+  },
+  dark: {
+    ghost: 2,
+    psychic: 2,
+    fighting: 0.5,
+    dark: 0.5,
+    fairy: 0.5,
+  },
+};
